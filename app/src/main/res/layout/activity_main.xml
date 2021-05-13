@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/universe"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/star" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="140dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/star" />
+
+    <TextView
+        android:id="@+id/memorio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="75dp"
+        android:fontFamily="@font/chelsea_market"
+        android:text="Memorio"
+        android:textAlignment="center"
+        android:textColor="#2196F3"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/memoryGame"
+        android:layout_width="326dp"
+        android:layout_height="73dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/chelsea_market"
+        android:text="Memory Game"
+        android:textAlignment="center"
+        android:textColor="#FF9800"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="@+id/memorio"
+        app:layout_constraintStart_toStartOf="@+id/memorio"
+        app:layout_constraintTop_toBottomOf="@+id/memorio" />
+
+    <TextView
+        android:id="@+id/diffLevel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/chelsea_market"
+        android:text="Difficulty:"
+        android:textAlignment="center"
+        android:textColor="#FF9800"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/memoryGame"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="@+id/memoryGame"
+        app:layout_constraintTop_toBottomOf="@+id/memoryGame" />
+
+    <Button
+        android:id="@+id/easyBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/chelsea_market"
+        android:linksClickable="true"
+        android:text="Easy"
+        app:backgroundTint="#2196F3"
+        app:layout_constraintEnd_toEndOf="@+id/diffLevel"
+        app:layout_constraintStart_toStartOf="@+id/diffLevel"
+        app:layout_constraintTop_toBottomOf="@+id/diffLevel" />
+
+    <Button
+        android:id="@+id/mediumBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/chelsea_market"
+        android:text="Medium"
+        app:backgroundTint="#2196F3"
+        app:layout_constraintEnd_toEndOf="@+id/easyBtn"
+        app:layout_constraintStart_toStartOf="@+id/easyBtn"
+        app:layout_constraintTop_toBottomOf="@+id/easyBtn" />
+
+    <Button
+        android:id="@+id/hardBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/chelsea_market"
+        android:text="Hard"
+        app:backgroundTint="#2196F3"
+        app:layout_constraintEnd_toEndOf="@+id/mediumBtn"
+        app:layout_constraintStart_toStartOf="@+id/mediumBtn"
+        app:layout_constraintTop_toBottomOf="@+id/mediumBtn" />
+
+    <Switch
+        android:id="@+id/sound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:checked="true"
+        android:fontFamily="@font/chelsea_market"
+        android:text="Sound"
+        android:textColor="#FFFFFF"
+        android:textOff="Sound Off"
+        android:textOn="Sound On"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
